@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAPPY TEACHER'S DAY</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="bg-music" src="path-to-music-file.mp3" autoplay loop></audio>
+  <button class="music-btn" onclick="toggleMusic()">♪ ↻      ◁  II  ▷     ↺ ♪</button>
+
+  <!-- Scrolling Message Bar -->
+  <div class="scrolling-message">𝓗𝓪𝓹𝓹𝔂 𝓣𝓮𝓪𝓬𝓱𝓮𝓻𝓼' 𝓓𝓪𝔂 : 𝓒𝓮𝓵𝓮𝓫𝓻𝓪𝓽𝓲𝓷𝓰 𝓽𝓱𝓮 𝓖𝓾𝓲𝓭𝓲𝓷𝓰 𝓛𝓲𝓰𝓱𝓽𝓼 𝓸𝓯 𝓞𝓾𝓻 𝓛𝓲𝓿𝓮𝓼.</div>
+
+  <!-- E-Greeting Card Container -->
+  <div class="card-container">
+    <div class="card" id="card">
+      <div class="card-front">
+        <img src="teaching-background-image.jpg" alt="Teaching Background" class="card-bg">
+        <h1 class="greeting-text">𝙷𝙰𝙿𝙿𝚈 𝚃𝙴𝙰𝙲𝙷𝙴𝚁'𝚂 𝙳𝙰𝚈</h1>
+        <button class="open-card-btn" onclick="openCard()">𝐎𝐏𝐄𝐍 𝐌𝐀𝐆𝐈𝐂✨</button>
+      </div>
+      <div class="card-inner hidden">
+        <h2 class="personal-message">"𝚃𝚑𝚊𝚗𝚔 𝚢𝚘𝚞 𝚏𝚘𝚛 𝚢𝚘𝚞𝚛 𝚞𝚗𝚠𝚊𝚟𝚎𝚛𝚒𝚗𝚐 𝚜𝚞𝚙𝚙𝚘𝚛𝚝 𝚊𝚗𝚍 𝚠𝚒𝚜𝚍𝚘𝚖 𝚝𝚑𝚊𝚝 𝚑𝚊𝚟𝚎 𝚜𝚑𝚊𝚙𝚎𝚍 𝚖𝚢 𝚓𝚘𝚞𝚛𝚗𝚎𝚢."</h2>
+        <p class="instruction">👇</p>
+
+        <!-- Interactive Elements -->
+        <div class="chalkboard" onclick="showMessage('message1')">
+          <p>Click Me!</p>
+        </div>
+        <div class="chalkboard" onclick="showMessage('message2')">
+          <p>Click Me!</p>
+        </div>
+
+        <!-- Messages -->
+        <div id="message1" class="hidden message-box">"𝐘𝐨𝐮 𝐢𝐧𝐬𝐩𝐢𝐫𝐞 𝐠𝐫𝐨𝐰𝐭𝐡, 𝐰𝐢𝐬𝐝𝐨𝐦, 𝐚𝐧𝐝 𝐠𝐫𝐞𝐚𝐭𝐧𝐞𝐬𝐬 𝐢𝐧 𝐞𝐯𝐞𝐫𝐲 𝐥𝐞𝐬𝐬𝐨𝐧."</div>
+        <div id="message2" class="hidden message-box">"𝐘𝐨𝐮 𝐚𝐫𝐞 𝐭𝐡𝐞 𝐜𝐨𝐫𝐧𝐞𝐫𝐬𝐭𝐨𝐧𝐞 𝐨𝐟 𝐨𝐮𝐫 𝐤𝐧𝐨𝐰𝐥𝐞𝐝𝐠𝐞 𝐚𝐧𝐝 𝐢𝐧𝐬𝐩𝐢𝐫𝐚𝐭𝐢𝐨𝐧."</div>
+
+        <!-- Photo Gallery Button -->
+        <button class="gallery-btn" onclick="openGallery()">View Best Moments</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Photo Gallery Modal -->
+  <div id="gallery-modal" class="hidden gallery-modal">
+    <h3>Best Moments with [Abhay mishra sir and Rajkishor sir]</h3>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Photo 1">
+      <img src="photo2.jpg" alt="Photo 2">
+      <img src="photo3.jpg" alt="Photo 3">
+      <img src="photo4.jpg" alt="photo 4">
+    </div>
+    <button class="close-gallery-btn" onclick="closeGallery()">Close Gallery</button>
+  </div>
+
+  <!-- Animated Heart Icons -->
+  <div class="floating-hearts">
+    <img src="heart-icon.png" class="heart">
+    <img src="heart-icon.png" class="heart">
+    <img src="heart-icon.png" class="heart">
+  </div>
+
+  <!-- Footer with Credit -->
+  <footer class="footer">
+    𝐂𝐎𝐏𝐘𝐑𝐈𝐆𝐇𝐓 ©️ 𝐌𝐀𝐃𝐄 𝐁𝐘 𝐑𝐄𝐘𝐀𝐙
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
